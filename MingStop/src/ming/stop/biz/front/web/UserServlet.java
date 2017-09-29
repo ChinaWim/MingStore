@@ -6,7 +6,6 @@ import ming.stop.biz.front.service.impl.UserServiceImpl;
 import ming.stop.entity.User;
 import ming.stop.utils.CommonUtils;
 import ming.stop.utils.MD5Utils;
-import org.junit.Test;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.Cookie;
@@ -67,12 +66,8 @@ public class UserServlet extends BaseServlet {
             e.printStackTrace();
         }
 
-    }       @Test
-            public void test(){
-        Calendar calendar = Calendar.getInstance();
-       // calendar.set(2017,8-1,28);
-        System.out.println(calendar.get(Calendar.DAY_OF_MONTH));
-            }
+    }
+
     //登录业务
     public void login(HttpServletRequest request,HttpServletResponse response){
 

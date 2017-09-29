@@ -102,4 +102,4 @@ var PopupLayer = new Class({
         this.options.useOverlay?this.overlay.hide():null;
         this.options.useFx?this.doEffects("close"):this.popupLayer.hide();
     }
-});﻿
+});

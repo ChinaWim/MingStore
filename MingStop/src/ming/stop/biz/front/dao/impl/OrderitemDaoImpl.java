@@ -1,6 +1,5 @@
 package ming.stop.biz.front.dao.impl;
 
-import com.ming.utils.JDBCUtil;
 import ming.stop.base.BaseDao;
 import ming.stop.biz.front.dao.OrderitemDao;
 import ming.stop.entity.Orderitem;
@@ -29,7 +28,7 @@ public class OrderitemDaoImpl extends BaseDao<Orderitem> implements OrderitemDao
     //更新订单项
     public boolean updateOrderitem(Orderitem orderitem) throws Exception {
         String sql = "update orderitem set count = ? ,subtotal = ? ,pid = ? where itemid = ?";
-        QueryRunner queryRunner = new QueryRunner(JDBCUtil.getDataSource());
+        QueryRunner queryRunner = new QueryRunner(JDBCUtils.getDataSource());
         int len = queryRunner.update(sql, orderitem.getCount(), orderitem.getSubtotal(), orderitem.getProduct().getPid(),orderitem.getItemid());
         return len >0? true:false;
     }

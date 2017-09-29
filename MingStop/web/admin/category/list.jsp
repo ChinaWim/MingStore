@@ -6,8 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href="${pageContext.request.contextPath}/css/Style1.css"
 	rel="stylesheet" type="text/css" />
-<script language="javascript"
-	src="${pageContext.request.contextPath}/js/public.js"></script>
+<%--<script language="javascript"
+	src="${pageContext.request.contextPath}/js/public.js"></script>--%>
 <script type="text/javascript">
 			function addCategory(){
 				window.location.href = "${pageContext.request.contextPath}/admin/category/add.jsp";
