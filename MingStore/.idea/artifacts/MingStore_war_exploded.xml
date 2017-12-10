@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="MingStore:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/MingStore_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="MingStore" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="MingStore/web/Web" />
+    </root>
+  </artifact>
+</component>
