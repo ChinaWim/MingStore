@@ -5,4 +5,4 @@
  <strong>开发人员</strong>：潘伟明 <br>
  <strong>开发时间</strong>：大二下 <br>
  <strong><a href = "http://118.89.50.153/MingStore">项目前台页面</a></strong>&
- <strong><a href = " http://118.89.50.153/MingStore/admin/index.jsp">项目前后台页面</a></strong>
+ <strong><a href = " http://118.89.50.153/MingStore/admin/index.jsp">项目后台页面</a></strong>
