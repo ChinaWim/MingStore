@@ -7,6 +7,7 @@
           <element id="module-output" name="MingStore" />
         </element>
       </element>
+      <element id="library" level="project" name="lib1" />
       <element id="javaee-facet-resources" facet="MingStore/web/Web" />
       <element id="javaee-facet-resources" facet="MingStore/web/Web2" />
     </root>
