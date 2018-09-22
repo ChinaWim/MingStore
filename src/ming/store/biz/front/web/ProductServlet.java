@@ -2,9 +2,12 @@ package ming.store.biz.front.web;
 
 import com.google.gson.Gson;
 import ming.store.base.BaseServlet;
+import ming.store.biz.admin.service.CategoryService;
+import ming.store.biz.admin.service.impl.CategoryServiceImpl;
 import ming.store.biz.front.service.ProductService;
 import ming.store.biz.front.service.impl.ProductServiceImpl;
 import ming.store.entity.CartItem;
+import ming.store.entity.Category;
 import ming.store.entity.PageBean;
 import ming.store.entity.Product;
 
@@ -22,6 +25,8 @@ import java.util.*;
 @WebServlet(urlPatterns = {"/product"})
 public class ProductServlet extends BaseServlet {
     ProductService productService = new ProductServiceImpl();
+
+    CategoryService categoryService = new CategoryServiceImpl();
 
     //分页处理 & 显示浏览记录
     public void productList(HttpServletRequest request , HttpServletResponse response){
@@ -91,7 +96,10 @@ public class ProductServlet extends BaseServlet {
                 cookie = new Cookie("history", pid);
             }
             response.addCookie(cookie);
-
+            //分类名称
+            Category category = categoryService.queryById(product.getCid());
+            request.setAttribute("categoryName",category.getCname());
+            request.setAttribute("product",product);
             request.setAttribute("product",product);
             request.setAttribute("currentPage",currentPage);
             request.getRequestDispatcher("/product_info.jsp").forward(request,response);
