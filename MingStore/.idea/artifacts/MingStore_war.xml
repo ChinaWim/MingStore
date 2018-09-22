@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="MingStore:war">
-    <output-path>$PROJECT_DIR$/out/artifacts/MingStore_war</output-path>
-    <root id="archive" name="MingStore_war.war">
-      <element id="artifact" artifact-name="MingStore:war exploded" />
-    </root>
-  </artifact>
-</component>
