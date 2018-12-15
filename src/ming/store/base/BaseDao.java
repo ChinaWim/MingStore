@@ -109,8 +109,9 @@ public class BaseDao<T> {
         ParameterizedType paramertype = (ParameterizedType) type;
         Type[] types = paramertype.getActualTypeArguments();
         Type target = types[0];
+       
+        //Class classes =  target.getClass();  本身就是个Class 再getClass()会返回 java.lang.Class
         //强转成 class类型
-        //Class classes =  target.getClass();  这个无效，因为这个是获取运行时的类
         targetClass = (Class)target;
         tableName = targetClass.getSimpleName().toLowerCase();
     }
