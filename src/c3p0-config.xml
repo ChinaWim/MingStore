@@ -2,7 +2,7 @@
 <!-- 默认配置构造函数 -->
   <default-config>
   <property name = "user">root</property>
-  <property name = "password">47218382</property>
+  <property name = "password">root</property>
   <property name = "jdbcUrl">jdbc:mysql://localhost:3306/mingstore?characterEncoding=UTF-8</property>
   <property name = "driverClass">com.mysql.jdbc.Driver</property>
   <property name = "initialPoolSize">5</property>
